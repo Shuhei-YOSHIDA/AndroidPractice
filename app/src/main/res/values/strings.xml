@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidPractice</string>
+    <string name="start_button_text">start_button</string>
+    <string name="pushed_start_button_text">PUSHED</string>
 </resources>
