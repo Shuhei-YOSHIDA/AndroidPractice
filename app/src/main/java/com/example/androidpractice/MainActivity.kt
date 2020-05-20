@@ -1,5 +1,6 @@
 package com.example.androidpractice
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,8 +17,16 @@ class MainActivity : AppCompatActivity() {
         var start_button = findViewById<Button>(R.id.start_button)
 
         start_button.setOnClickListener{
-            Log.i("testtag", "pushed start button")
+            Log.i("sample", "pushed start button")
             start_button.setText(R.string.pushed_start_button_text)
+        }
+
+        var sub1_button = findViewById<Button>(R.id.button_to_sub1)
+
+        sub1_button.setOnClickListener{
+            Log.i("sample", "pushed button to sub1")
+            val intent = Intent(application, Sub1Activity::class.java)
+            startActivity(intent)
         }
     }
 }
